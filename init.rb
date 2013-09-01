@@ -1,4 +1,6 @@
 require_dependency 'redmine_notify_user_custom_field_patch'
+require_dependency 'redmine_notify_user_issue_patch'
+require_dependency 'redmine_notify_user_user_patch'
 require_dependency 'redmine_notify_user_custom_field_hooks'
 
 
