@@ -2,12 +2,21 @@
 
 ## Overview
 
-This plugin allows added e-mail notification to a user-type custom field any 
-user mentioned in the field will receive an e-mail notification if the issue is
-changed.  The notification will only be sent if the user has his/her email 
-notification setting to 'Only to issues I watch or am invovled in' or higher.
+This plugin adds a 'Notify User' option to a user-type custom field.  If this 
+option is set, any user mentioned in the field will receive an e-mail 
+notification if the issue is changed.  The notification will only be sent if the 
+user has his/her email notification setting to 'Only to issues I watch or am 
+involved in' or higher.
 
-The feature can be enabled on the custom field settings page.
+This project is intended as a rough workaround to the problem of multiple 
+assignees in cases where group creation is impractical.  In this scenario, the 
+primary person responsable for implementing the issue will be named as the 
+assignee, while additional people involved will be named in a custom field.
+All uses involved will then receive e-mail notification.  Unlike the watcher 
+function, the custom field can be used for managing queries and a user cannot
+unwatch an issue if they are selected.
+
+The feature can be enabled on the custom field's settings page.
 
 Please report issues to: 
   https://github.com/ande3577/redmine_notify_user_custom_field/issues
