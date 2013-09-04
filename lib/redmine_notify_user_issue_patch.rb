@@ -19,7 +19,8 @@ module RedmineNotifyUserIssuePatch
       values.each do |v|
         v = [ v ] unless v.is_a?(Array)
         v.each do |uid|
-          users << User.where(:id => uid).first
+          user = User.where(:id => uid).first
+          users << user if user
         end
       end
       users
